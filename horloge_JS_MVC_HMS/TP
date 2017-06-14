@@ -1,0 +1,34 @@
+objectif faire une horloge et respecter le pattern MVC
+    horloge fonctionnelle
+        1 refresh par seconde avec setIntervalle(1000ms)
+        démarrage avec l'heure actuelle
+
+        + 6 boutons pour régler
+
+model.js
+ 1 constructeur
+ 3 attributs
+ +  3 getters
+ +  6 fonctions
+    3 addXxx
+    3 removeXxx
+   3 events "xxx changed"
+   (environ 2 emit par event)
+
+ views.js
+    1 constructeur
+    6 boutons
+    6 addEventListener
+    6 events (6 emits)
+        - 3 addXxx
+        - 3 removeXxx
+    3 abonnements vue/model xxxChanged
+    +3 fonctions display xxx
+
+controller.js
+    1 constructeur
+    6 abonnements ctrl/view
+    6 fonctions handleXxx
+    6 appels au modele
+
+souheil.sultan@imie.fr
